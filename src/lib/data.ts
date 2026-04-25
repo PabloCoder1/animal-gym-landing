@@ -45,32 +45,35 @@ export const testimonials = [
     id: 2,
     name: "Juliana T.",
     role: "Aluna de Muay Thai & Funcional",
-    text: "Eu não aguentava mais a rotina sedentária. O Muay Thai me devolveu a disposição e o foco. Sem contar que a galera aqui no Saboó é super receptiva, me senti em casa.",
+    text: "Eu não aguentava mais a rotina sedentária. O Muay Thai me devolveu a disposição e o foco. Sem contar que a galera aqui é super receptiva, me senti em casa.",
   },
   {
     id: 3,
     name: "Roberto S.",
     role: "Foco em Hipertrofia",
-    text: "Aparelhagem impecável e horário flexível. Saio do trabalho tarde e consigo treinar tranquilamente à noite sem aquela superlotação absurda de outras academias de rede.",
+    text: "Aparelhagem impecável e horário flexível. Saio do trabalho tarde e consigo treinar tranquilamente à noite sem aquela superlotação absurda de outras academias.",
   },
+
+  // NOVOS MAIS FORTES 👇
+
   {
     id: 4,
-    name: "Carlos M.",
-    role: "Iniciante na Musculação",
-    text: "Sempre tive vergonha de ir para a academia, mas o clima aqui é diferente. Os professores me acolheram desde o primeiro dia. Em 3 meses já sinto outra energia para trabalhar.",
+    name: "Fernanda L.",
+    role: "Voltou a treinar após 5 anos parada",
+    text: "Eu estava completamente parada há anos e achei que não ia conseguir manter uma rotina. Comecei devagar e os professores montaram um treino perfeito pra mim. Hoje não falto mais, virou parte do meu dia.",
   },
   {
     id: 5,
-    name: "Juliana T.",
-    role: "Aluna de Muay Thai & Funcional",
-    text: "Eu não aguentava mais a rotina sedentária. O Muay Thai me devolveu a disposição e o foco. Sem contar que a galera aqui no Saboó é super receptiva, me senti em casa.",
+    name: "Lucas R.",
+    role: "Aluno de Funcional e Musculação",
+    text: "Entrei pelo Funcional e Musculação e acabei ficando pela estrutura toda. Ambiente respeitoso, treino sério e sem ego. Evoluí muito mais rápido do que imaginava.",
   },
   {
     id: 6,
-    name: "Roberto S.",
-    role: "Foco em Hipertrofia",
-    text: "Aparelhagem impecável e horário flexível. Saio do trabalho tarde e consigo treinar tranquilamente à noite sem aquela superlotação absurda de outras academias de rede.",
-  }  
+    name: "Patrícia G.",
+    role: "Treina antes do trabalho",
+    text: "O horário cedo salvou minha rotina. Consigo treinar antes de trabalhar e já começo o dia com outra disposição. Academia organizada e sem bagunça.",
+  }
 ];
 
 export const faqs = [
