@@ -4,6 +4,9 @@ import { Benefits } from "@/components/sections/Benefits";
 import { Services } from "@/components/sections/Services";
 import { Testimonials } from "@/components/sections/Testimonials";
 import { Cta } from "@/components/sections/Cta";
+import { Faq } from "@/components/sections/Faq";
+import { Location } from "@/components/sections/Location";
+import { Footer } from "@/components/layout/Footer";
 
 export default function Home() {
   return (
@@ -13,6 +16,9 @@ export default function Home() {
       <Services />
       <Testimonials />
       <Cta />
+      <Faq />
+      <Location />
+      <Footer />
     </main>
   );
 }
