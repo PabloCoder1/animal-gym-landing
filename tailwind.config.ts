@@ -25,7 +25,9 @@ const config: Config = {
           950: "#401004",
         },
         zinc: {
+          50: "#fafafa", // Default zinc-50
           925: "#121214", // Fundo customizado premium, quebra a dureza do preto absoluto
+          950: "#09090b", // Default zinc-950
         }
       },
       fontFamily: {

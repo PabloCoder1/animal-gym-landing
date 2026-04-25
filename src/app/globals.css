@@ -3,6 +3,33 @@
 @tailwind components;
 @tailwind utilities;
 
+@theme {
+  --color-zinc-50: #fafafa;
+  --color-zinc-950: #09090b;
+  --color-zinc-925: #121214;
+  --color-brand: #FF5722;
+  --color-brand-50: #FFF0EB;
+  --color-brand-100: #FFD9CC;
+  --color-brand-200: #FFBBA3;
+  --color-brand-300: #FF9470;
+  --color-brand-400: #FF7342;
+  --color-brand-500: #FF5722;
+  --color-brand-600: #E54512;
+  --color-brand-700: #B8320A;
+  --color-brand-800: #8F2A0B;
+  --color-brand-900: #75260D;
+  --color-brand-950: #401004;
+  --font-family-sans: var(--font-inter), sans-serif;
+  --font-family-heading: var(--font-montserrat), sans-serif;
+  --animate-pulse-slow: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  --animate-float: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
 @layer base {
   :root {
     --background: 240 10% 3.9%;

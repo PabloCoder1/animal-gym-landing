@@ -1,13 +1,14 @@
 // 📄 src/components/ui/Button.tsx
 "use client";
 
-import { ButtonHTMLAttributes, forwardRef } from "react";
-import { motion } from "framer-motion";
+import { forwardRef } from "react";
+import { motion, HTMLMotionProps } from "framer-motion";
 
-interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+interface ButtonProps extends Omit<HTMLMotionProps<"button">, "ref" | "children"> {
   variant?: "primary" | "outline" | "ghost";
   size?: "sm" | "md" | "lg";
   isLoading?: boolean;
+  children?: React.ReactNode;
 }
 
 export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
