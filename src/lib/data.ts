@@ -11,18 +11,24 @@ export const services = [
   {
     id: "musculacao",
     title: "Musculação",
+    video: "/videos/service-musculacao.mp4",
+    poster: "/videos/poster-musculacao.png", // Imagem estática de fundo
     description: "Equipamentos modernos e treinos periodizados para você ganhar força, massa magra e transformar seu corpo, não importa se você nunca treinou antes.",
     icon: Dumbbell,
   },
   {
     id: "funcional",
     title: "Treino Funcional",
+    video: "/videos/service-funcional.mp4",
+    poster: "/videos/poster-funcional.png",
     description: "Aulas dinâmicas e intensas projetadas para queimar gordura, ganhar fôlego e melhorar seu condicionamento para os desafios do dia a dia.",
     icon: Flame,
   },
   {
     id: "muaythai",
     title: "Muay Thai",
+    video: "/videos/service-muaythai.mp4",
+    poster: "/videos/poster-muaythai.png",
     description: "Gaste energia, aprenda a se defender e construa uma disciplina de ferro em aulas empolgantes. Respeito e evolução para todos os níveis.",
     icon: Shield,
   }
@@ -46,7 +52,25 @@ export const testimonials = [
     name: "Roberto S.",
     role: "Foco em Hipertrofia",
     text: "Aparelhagem impecável e horário flexível. Saio do trabalho tarde e consigo treinar tranquilamente à noite sem aquela superlotação absurda de outras academias de rede.",
-  }
+  },
+  {
+    id: 4,
+    name: "Carlos M.",
+    role: "Iniciante na Musculação",
+    text: "Sempre tive vergonha de ir para a academia, mas o clima aqui é diferente. Os professores me acolheram desde o primeiro dia. Em 3 meses já sinto outra energia para trabalhar.",
+  },
+  {
+    id: 5,
+    name: "Juliana T.",
+    role: "Aluna de Muay Thai & Funcional",
+    text: "Eu não aguentava mais a rotina sedentária. O Muay Thai me devolveu a disposição e o foco. Sem contar que a galera aqui no Saboó é super receptiva, me senti em casa.",
+  },
+  {
+    id: 6,
+    name: "Roberto S.",
+    role: "Foco em Hipertrofia",
+    text: "Aparelhagem impecável e horário flexível. Saio do trabalho tarde e consigo treinar tranquilamente à noite sem aquela superlotação absurda de outras academias de rede.",
+  }  
 ];
 
 export const faqs = [

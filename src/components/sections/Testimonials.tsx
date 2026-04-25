@@ -2,49 +2,49 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Quote, Star } from "lucide-react";
+import { Star } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { SectionTitle, SectionSubtitle, Highlight } from "@/components/ui/Typography";
 import { testimonials } from "@/lib/data";
 
 export function Testimonials() {
   return (
-    <section id="depoimentos" className="py-20 bg-zinc-950">
+    <section id="depoimentos" className="py-24 bg-zinc-100">
       <Container>
         <div className="flex flex-col items-center text-center mb-16">
-          <SectionTitle>O que <Highlight>nossos alunos</Highlight> dizem</SectionTitle>
-          <SectionSubtitle>
-            Não acredite apenas na nossa palavra. Veja a transformação real de quem escolheu treinar com a gente.
-          </SectionSubtitle>
+          {/* Mudando a cor do título para preto na seção clara */}
+          <h2 className="font-heading text-4xl font-black uppercase tracking-tight text-zinc-900 md:text-5xl lg:text-6xl">
+            Aprovada por <Highlight>quem treina</Highlight>
+          </h2>
+          <p className="mt-4 max-w-2xl text-zinc-600 md:text-lg">
+            Veja por que somos a academia favorita do Saboó.
+          </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">
           {testimonials.map((testimonial, index) => (
             <motion.div
               key={testimonial.id}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
-              className="relative rounded-3xl bg-zinc-925 p-8 border border-zinc-800/50 hover:border-zinc-700 transition-colors"
+              className="inline-block w-full break-inside-avoid rounded-3xl bg-white p-8 shadow-sm border border-zinc-200"
             >
-              <Quote className="absolute top-6 right-6 h-8 w-8 text-zinc-800" />
-              
-              <div className="flex text-brand-500 mb-6">
+              <div className="flex text-brand-500 mb-4">
                 {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="h-5 w-5 fill-current" />
+                  <Star key={i} className="h-4 w-4 fill-current" />
                 ))}
               </div>
               
-              <p className="text-zinc-300 italic leading-relaxed mb-8 relative z-10">
+              <p className="text-zinc-700 leading-relaxed mb-6 font-medium">
                 "{testimonial.text}"
               </p>
               
-              <div className="mt-auto">
-                <p className="font-heading font-bold text-white uppercase tracking-wide">
+              <div className="border-t border-zinc-100 pt-4">
+                <p className="font-heading font-black uppercase text-zinc-900">
                   {testimonial.name}
                 </p>
-                <p className="text-sm text-brand-500">
+                <p className="text-xs font-bold text-brand-500 uppercase tracking-widest mt-1">
                   {testimonial.role}
                 </p>
               </div>
